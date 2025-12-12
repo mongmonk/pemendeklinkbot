@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('short_code', 10);
             $table->string('ip_address', 45);
             $table->text('user_agent')->nullable();
-            $table->string('referer', 500)->nullable();
+            $table->string('referer', 191)->nullable(); // Reduced for MySQL compatibility
             $table->string('country', 2)->nullable();
             $table->string('city', 100)->nullable();
             $table->string('device_type', 50)->nullable();
