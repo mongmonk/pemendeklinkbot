@@ -156,7 +156,7 @@ class TelegramBotService
                 $message .= "🏷️ Custom Alias: `{$customAlias}`\n";
             }
             
-            $message .= "\nKlik untuk copy: `[Copy]({$shortUrl})`";
+            $message .= "\nKlik untuk copy: `{$shortUrl}`";
             
             $this->sendMessage($chatId, $message, 'Markdown');
         } catch (\InvalidArgumentException $e) {
