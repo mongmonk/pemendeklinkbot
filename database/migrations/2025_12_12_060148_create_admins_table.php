@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('admins', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('telegram_user_id')->unique();
-            $table->string('username')->nullable();
+            $table->string('username', 191)->nullable(); // Reduced for MySQL compatibility
             $table->string('password_hash');
-            $table->string('email')->nullable();
+            $table->string('email', 191)->nullable(); // Reduced for MySQL compatibility
             $table->boolean('is_active')->default(true);
             $table->timestamps();
             
