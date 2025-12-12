@@ -236,7 +236,7 @@ CACHE_STORE=redis
 QUEUE_CONNECTION=redis
 
 # Telegram
-TELEGRAM_BOT_TOKEN=8552109110:AAHJHMIBm_ai5v0Kti9DqXHTs4kQxqdBKf8
+TELEGRAM_BOT_TOKEN=8552109110:xxxxxxxxxxxxxxx
 TELEGRAM_WEBHOOK_URL=https://aqwam.id/api/telegram/webhook
 TELEGRAM_WEBHOOK_SECRET=your_webhook_secret
 
