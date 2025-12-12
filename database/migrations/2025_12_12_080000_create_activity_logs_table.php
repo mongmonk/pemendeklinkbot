@@ -15,14 +15,14 @@ return new class extends Migration
             $table->id();
             $table->foreignId('admin_id')->nullable()->constrained()->onDelete('set null');
             $table->string('action');
-            $table->string('model_type')->nullable();
+            $table->string('model_type', 191)->nullable(); // Reduced for MySQL compatibility
             $table->unsignedBigInteger('model_id')->nullable();
             $table->text('description');
             $table->json('properties')->nullable();
-            $table->string('ip_address')->nullable();
+            $table->string('ip_address', 191)->nullable(); // Reduced for MySQL compatibility
             $table->text('user_agent')->nullable();
             $table->timestamps();
-
+            
             $table->index(['model_type', 'model_id']);
             $table->index('admin_id');
             $table->index('action');
