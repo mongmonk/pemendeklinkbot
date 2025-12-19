@@ -150,7 +150,7 @@ class TelegramBotService
             $shortUrl = $link->short_url;
             $message = "✅ *Link berhasil dibuat!*\n\n";
             $message .= "🔗 Short URL: `{$shortUrl}`\n";
-            $message .= "🌐 Original URL: {$url}\n";
+            $message .= "🌐 Original URL: `{$url}`\n";
             
             if ($customAlias) {
                 $message .= "🏷️ Custom Alias: `{$customAlias}`\n";
@@ -202,7 +202,7 @@ class TelegramBotService
             $shortUrl = $link->short_url;
             $message = "✅ *Link berhasil dibuat!*\n\n";
             $message .= "🔗 Short URL: `{$shortUrl}`\n";
-            $message .= "🌐 Original URL: {$url}\n";
+            $message .= "🌐 Original URL: `{$url}`\n";
             
             if ($customAlias) {
                 $message .= "🏷️ Custom Alias: `{$customAlias}`\n";
@@ -250,7 +250,7 @@ class TelegramBotService
             
             $message = "📊 *Statistik Link: `{$shortCode}`*\n\n";
             $message .= "🔗 Short URL: {$link->short_url}\n";
-            $message .= "🌐 Original URL: {$link->long_url}\n";
+            $message .= "🌐 Original URL: `{$link->long_url}`\n";
             $message .= "👁️ Total Klik: {$analytics['total_clicks']}\n";
             $message .= "👥 Klik Unik: {$analytics['unique_clicks']}\n";
             $message .= "📅 Klik Hari Ini: {$analytics['today_clicks']}\n";

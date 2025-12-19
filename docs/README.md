@@ -196,7 +196,7 @@ php artisan serve
 
 ### Production Environment
 - **Domain**: `aqwam.id`
-- **Bot Token**: `8552109110:AAHJHMIBm_ai5v0Kti9DqXHTs4kQxqdBKf8`
+- **Bot Token**: `8552109110:xxxxxxxxxxxxxxxx`
 - **SSL**: Required untuk Telegram webhook
 
 ### Server Requirements
